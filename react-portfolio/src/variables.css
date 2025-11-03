@@ -1,0 +1,161 @@
+:root {
+    --spacing-xxs: 8px;
+    --spacing-xs: 12px;
+    --spacing-s: 16px;
+    --spacing-m: 20px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 40px;
+    --spacing-xxxl: 64px;
+    --spacing-xxxxl: 120px;
+
+    --icon-sm: 24px;
+    --icon-md: 32px;
+    --icon-lg: 40px;
+    --icon-xl: 64px;
+    --icon-xxl: 80px;
+
+    --radius-xs: 2px;
+    --radius-s: 4px;
+    --radius-m: 6px;
+
+    --content-padding: 4vw;
+
+    --blue-100: #E9F2FFFF;
+    --blue-200: #CCE0FFFF;
+    --blue-300: #85B8FFFF;
+    --blue-400: #579DFFFF;
+    --blue-500: #388BFFFF;
+    --blue-600: #1D7AFCFF;
+    --blue-700: #0C66E4FF;
+    --blue-800: #0055CCFF;
+    --blue-900: #09326CFF;
+    --blue-1000: #1C2B41FF;
+
+    --red-100: #FFECEBFF;
+    --red-200: #FFD5D2FF;
+    --red-300: #FD9891FF;
+    --red-400: #F87168FF;
+    --red-500: #F15B50FF;
+    --red-600: #E2483DFF;
+    --red-700: #C9372CFF;
+    --red-800: #AE2E24FF;
+    --red-900: #5D1F1AFF;
+    --red-1000: #42221FFF;
+
+    --violet-100: #F3F0FFFF;
+    --violet-200: #E5DBFFFF;
+    --violet-300: #D0BFFFFF;
+    --violet-400: #B197FCFF;
+    --violet-500: #9775FAFF;
+    --violet-600: #845EF7FF;
+    --violet-700: #7950F2FF;
+    --violet-800: #7048E8FF;
+    --violet-900: #6741D9FF;
+    --violet-1000: #5F3DC4FF;
+
+    --neutral-0: #FFFFFFFF;
+    --neutral-100: #F7F8F9FF;
+    --neutral-200: #F1F2F4FF;
+    --neutral-300: #DCDFE4FF;
+    --neutral-400: #B3B9C4FF;
+    --neutral-500: #8590A2FF;
+    --neutral-600: #758195FF;
+    --neutral-700: #626F86FF;
+    --neutral-800: #44546FFF;
+    --neutral-900: #2C3E5DFF;
+    --neutral-1000: #172B4DFF;
+    --neutral-1100: #091E42FF;
+    
+    --darkneutral-0: #161A1DFF;
+    --darkneutral-100: #1D2125FF;
+    --darkneutral-200: #22272BFF;
+    --darkneutral-250: #282E33FF;
+    --darkneutral-300: #2C333AFF;
+    --darkneutral-350: #38414AFF;
+    --darkneutral-400: #454F59FF;
+    --darkneutral-500: #596773FF;
+    --darkneutral-600: #738496FF;
+    --darkneutral-700: #8C9BABFF;
+    --darkneutral-800: #9FADBCFF;
+    --darkneutral-900: #B6C2CFFF;
+    --darkneutral-1000: #C7D1DBFF;
+    --darkneutral-1100: #DEE4EAFF;
+
+    /* Semantic */
+    --surface-0: var(--neutral-0);
+    --surface-1: var(--neutral-100);
+    --surface-2: var(--neutral-200);
+    --surface-outline-1: var(--neutral-300);
+    --surface-static-0: var(--darkneutral-0);
+    --surface-static-1: var(--darkneutral-100);
+    --surface-static-outline-0: var(--darkneutral-350);
+
+    --surface-foreground-blur: rgba(255, 255, 255, 0.8);
+
+    --text-neutral-primary: var(--darkneutral-0);
+    --text-neutral-secondary: var(--darkneutral-400);
+    --text-neutral-placeholder: var(--darkneutral-700);
+    --text-static-primary: var(--darkneutral-1100);
+    --text-static-secondary: var(--darkneutral-1000);
+    --text-static-placeholder: var(--darkneutral-800);
+
+    --accent: var(--blue-700);
+    --accent-hover: var(--blue-800);
+
+    --icon-neutral: var(--primitive-1100);
+    --icon-neutral-hover: var(--primitive-600);
+}
+
+/* Dark Mode Variables */
+.darkmode {
+    /* SEMANTIC COLORS */
+    --surface-0: var(--darkneutral-0);
+    --surface-1: var(--darkneutral-100);
+    --surface-2: var(--darkneutral-200);
+    --surface-outline-1: var(--darkneutral-300);
+    --surface-static-0: var(--darkneutral-0);
+    --surface-static-1: var(--darkneutral-100);
+    --surface-static-outline-0: var(--darkneutral-350);
+
+    --text-neutral-primary: var(--darkneutral-1100);
+    --text-neutral-secondary: var(--darkneutral-800);
+    --text-neutral-placeholder: var(--darkneutral-700);
+    --text-static-primary: var(--darkneutral-1100);
+    --text-static-secondary: var(--darkneutral-1000);
+    --text-static-placeholder: var(--darkneutral-800);
+
+    --surface-foreground-blur: rgba(22, 26, 29, 0.8);
+
+    --accent: var(--blue-600);
+    --accent-hover: var(--blue-800);
+
+    --icon-neutral: #758195;
+    --icon-neutral-hover: #5f6879;
+}
+
+/* Text */
+.text-xxs { font-size: 0.833rem; font-weight: 400; line-height: 1.4; } /* ~10pt */
+.text-xs  { font-size: 1rem;    font-weight: 400; line-height: 1.4; } /* ~12pt */
+.text-s   { font-size: 1.125rem;font-weight: 400; line-height: 1.4; } /* ~14pt */
+.text-m   { font-size: 1.25rem; font-weight: 500; line-height: 1.5; } /* ~16pt */
+.text-l   { font-size: 1.5rem;  font-weight: 500; line-height: 1.3; } /* ~18pt */
+.text-xl  { font-size: 2rem;    font-weight: 600; line-height: 1.2; } /* ~24pt */
+.text-xxl { font-size: 2.5rem;  font-weight: 600; line-height: 1.2; } /* ~32pt */
+.text-xxxl{ font-size: 3rem;    font-weight: 700; line-height: 1.1; } /* ~48pt */
+
+.link-plain {
+    text-decoration: none;
+    color: var(--text-neutral-primary);
+}
+
+.link-plain:hover {
+    opacity: 80%;
+}
+
+/* Text Colors */
+.text-neutral-primary   { color: var(--text-neutral-primary); }
+.text-neutral-secondary { color: var(--text-neutral-secondary); }
+.text-neutral-placeholder { color: var(--text-neutral-placeholder); }
+.strong { font-weight: 600; }
+.accent { color: var(--accent); }

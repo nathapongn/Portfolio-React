@@ -1,0 +1,15 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import 'variables.css';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Satoshi, Poppins, Inter, Arial, Helvetica, sans-serif;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

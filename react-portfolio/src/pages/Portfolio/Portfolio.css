@@ -1,0 +1,32 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.hero-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero-banner-label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-s);
+    padding: var(--spacing-xxxl) 0;
+    max-width: 60ch;
+}
+
+/* Create 2 columns, and make each column take up 1 fraction of the available space. */
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-m);
+    padding-bottom: var(--spacing-xxxl);
+}
+
+@media (max-width: 768px) {
+    .projects{
+        grid-template-columns: 1fr;
+    }
+}
