@@ -14,6 +14,10 @@
     background-color: var(--surface-0-hover);
     border-radius: var(--radius-s);
 }
+.button-icon:hover svg{
+    color: var(--icon-neutral-hover);
+}
+
 .hamburger{
     display: none;
 }

@@ -109,8 +109,10 @@
     --accent: var(--blue-700);
     --accent-hover: var(--blue-800);
 
-    --icon-neutral: var(--darkneutral-400);
-    --icon-neutral-hover: var(--darkneutral-600);
+    --icon-enabled: var(--darkneutral-600);
+    --icon-enabled-hover: var(--darkneutral-500);
+    --icon-subtle: var(--darkneutral-700);
+    --icon-accent: var(--accent);
     
     --divider: var(--darkneutral-alpha-200);
 }
@@ -139,8 +141,10 @@
     --accent: var(--blue-600);
     --accent-hover: var(--blue-800);
 
-    --icon-neutral: #758195;
-    --icon-neutral-hover: #5f6879;
+    --icon-enabled: var(--darkneutral-600);
+    --icon-enabled-hover: var(--darkneutral-700);
+
+    --icon-subtle: var(--darkneutral-500);
     
     --darkneutral-alpha-100: rgba(255, 255, 255, 0.05);
     --darkneutral-alpha-200: rgba(255, 255, 255, 0.09);
@@ -176,5 +180,7 @@
 .accent { color: var(--accent); }
 
 /* Icon Colors */
-.icon-neutral { color: var(--icon-neutral); }
-.icon-neutral-hover:hover { color: var(--icon-neutral-hover); cursor: pointer; }
+.icon-enabled { color: var(--icon-enabled); }
+.icon-enabled-hover:hover { color: var(--icon-enabled-hover); cursor: pointer; }
+.icon-subtle { color: var(--icon-subtle); }
+.icon-accent { color: var(--icon-accent); }
