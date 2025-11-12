@@ -8,6 +8,10 @@
   font-family: Satoshi, Poppins, Inter, Arial, Helvetica, sans-serif;
 }
 
+body{
+  background-color: var(--surface-0);
+}
+
 main{
   display: flex;
   align-items: center;

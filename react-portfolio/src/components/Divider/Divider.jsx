@@ -1,6 +1,4 @@
-
-
-export default function Divider({ orientation = 'horizontal', thickness = '1px', color = 'var(--neutral-300)' }) {
+export default function Divider({ orientation = 'horizontal', thickness = '1px', color = 'var(--divider)' }) {
     const style = {
         border: 'none',
         backgroundColor: color

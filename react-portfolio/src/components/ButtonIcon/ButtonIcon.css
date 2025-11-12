@@ -1,0 +1,29 @@
+.button-icon{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding: var(--spacing-xs);
+    cursor: pointer;
+    height: 48px;
+    width: 48px;
+} 
+.button-icon:hover{
+    background-color: var(--surface-0-hover);
+    border-radius: var(--radius-s);
+}
+.hamburger{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .button-icon{
+        padding: var(--spacing-xs);
+    }
+    .hamburger{
+        display: block;
+    }
+}

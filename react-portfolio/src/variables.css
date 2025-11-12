@@ -1,4 +1,5 @@
 :root {
+    /* PRIMITIVE */
     --spacing-xxs: 8px;
     --spacing-xs: 12px;
     --spacing-s: 16px;
@@ -67,7 +68,7 @@
     --neutral-1000: #172B4DFF;
     --neutral-1100: #091E42FF;
     
-    --darkneutral-0: #161A1DFF;
+    --darkneutral-0: #161a1d;
     --darkneutral-100: #1D2125FF;
     --darkneutral-200: #22272BFF;
     --darkneutral-250: #282E33FF;
@@ -82,8 +83,13 @@
     --darkneutral-1000: #C7D1DBFF;
     --darkneutral-1100: #DEE4EAFF;
 
-    /* Semantic */
+    --darkneutral-alpha-100: rgba(22, 26, 29, 0.05);
+    --darkneutral-alpha-200: rgba(22, 26, 29, 0.09);
+    --darkneutral-alpha-300: rgba(22, 26, 29, 0.15);
+
+    /* SEMANTIC */
     --surface-0: var(--neutral-0);
+    --surface-0-hover: var(--darkneutral-alpha-100);
     --surface-1: var(--neutral-100);
     --surface-2: var(--neutral-200);
     --surface-outline-1: var(--neutral-300);
@@ -103,14 +109,17 @@
     --accent: var(--blue-700);
     --accent-hover: var(--blue-800);
 
-    --icon-neutral: var(--primitive-1100);
-    --icon-neutral-hover: var(--primitive-600);
+    --icon-neutral: var(--darkneutral-400);
+    --icon-neutral-hover: var(--darkneutral-600);
+    
+    --divider: var(--darkneutral-alpha-200);
 }
 
-/* Dark Mode Variables */
+/* DARK MODE */
 .darkmode {
     /* SEMANTIC COLORS */
     --surface-0: var(--darkneutral-0);
+    --surface-0-hover: var(--darkneutral-alpha-100);
     --surface-1: var(--darkneutral-100);
     --surface-2: var(--darkneutral-200);
     --surface-outline-1: var(--darkneutral-300);
@@ -118,20 +127,26 @@
     --surface-static-1: var(--darkneutral-100);
     --surface-static-outline-0: var(--darkneutral-350);
 
+    --surface-foreground-blur: rgba(22, 26, 29, 0.8);
+
     --text-neutral-primary: var(--darkneutral-1100);
-    --text-neutral-secondary: var(--darkneutral-800);
+    --text-neutral-secondary: var(--darkneutral-900);
     --text-neutral-placeholder: var(--darkneutral-700);
     --text-static-primary: var(--darkneutral-1100);
     --text-static-secondary: var(--darkneutral-1000);
     --text-static-placeholder: var(--darkneutral-800);
-
-    --surface-foreground-blur: rgba(22, 26, 29, 0.8);
 
     --accent: var(--blue-600);
     --accent-hover: var(--blue-800);
 
     --icon-neutral: #758195;
     --icon-neutral-hover: #5f6879;
+    
+    --darkneutral-alpha-100: rgba(255, 255, 255, 0.05);
+    --darkneutral-alpha-200: rgba(255, 255, 255, 0.09);
+    --darkneutral-alpha-300: rgba(255, 255, 255, 0.15);
+
+    --divider: var(--darkneutral-alpha-200);
 }
 
 /* Text */
@@ -159,3 +174,7 @@
 .text-neutral-placeholder { color: var(--text-neutral-placeholder); }
 .strong { font-weight: 600; }
 .accent { color: var(--accent); }
+
+/* Icon Colors */
+.icon-neutral { color: var(--icon-neutral); }
+.icon-neutral-hover:hover { color: var(--icon-neutral-hover); cursor: pointer; }

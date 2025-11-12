@@ -1,59 +1,54 @@
-import logo from '../../assets/site-logo.svg'
-import Wrapper from '../Wrapper/Wrapper.jsx'
-import { Link } from 'react-router-dom'; 
+// CSS
 import './Header.css'
+
+import Wrapper from '../Wrapper/Wrapper.jsx'
 import Divider from '../Divider/Divider.jsx'
-import { useState } from 'react';
+import Tab from '../Tab/Tab.jsx'
+import ButtonIcon from '../ButtonIcon/ButtonIcon.jsx'
+
+import { useNavigate, Link} from 'react-router-dom'; 
+import { useState, useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext.jsx';
 
 // MUI
-import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import BedtimeIcon from '@mui/icons-material/Bedtime';
+import SunnyIcon from '@mui/icons-material/Sunny';
 
 export default function Header() {
-    // Use state to manage mobile menu open/close
-    const [ mobileMenuOpen, setMobileMenuOpen ] = useState(false);
+    const navigate = useNavigate();
 
-    // Function to set mobile menu from the previous state to the opposite state
+    const { darkMode, toggleDarkMode } = useContext(ThemeContext);
+    const [ menuOpen, setMenuOpen ] = useState(false);
+
     function toggleMenu() {
-        setMobileMenuOpen(prev => !prev);
+        setMenuOpen(prev => !prev);
     }
 
     return(
         <nav className="navigation">
-            <Wrapper>
+            <Wrapper id="header">
                 <div className="navigation-content">
                     <div className="site-name">
-                        <img src={logo} alt="Go to Home" />
-                        <a href="/" className="text-l link-plain">Nathapong Nurae</a>
+                        <Link to="/" className="text-l link-plain">Nathapong Nurae</Link>
                     </div>
-
                     {/* Desktop Menu List */}
                     <div className="desktop-menu">
-                        <Link to="/" className="text-m link-plain" >Portfolio</Link>
-                        <Link to="/about" className="text-m link-plain" >About</Link>
+                        <Tab to="/" onClick={() => navigate("/")}>Portfolio</Tab>
+                        <Tab to="/about" onClick={() => navigate("/about")}>About</Tab>
+                        <ButtonIcon onClick={() => toggleDarkMode()}>{darkMode ? <SunnyIcon /> : <BedtimeIcon /> }</ButtonIcon>
                     </div>
 
-                    {/* Mobile Menu Icon */}
-                    <div className="button-mobile-menu">
-                        {/* On click icon button, toggle menu */}
-                        <IconButton onClick={toggleMenu}>
-                            <MenuIcon />
-                        </IconButton>
-                    </div>
+                    <ButtonIcon className="hamburger" onClick={() => toggleMenu()}>{menuOpen ? <CloseIcon /> : <MenuIcon />}</ButtonIcon>
                 </div>
             </Wrapper>
             <Divider orientation="horizontal"/>
-
-            {mobileMenuOpen && (
-                <div className="mobile-menu">
-                    <Link to="/" className="text-m link-plain" onClick={toggleMenu}>Portfolio</Link>
-                    <Link to="/about" className="text-m link-plain" onClick={toggleMenu}>About</Link>
-                    <IconButton onClick={toggleMenu}>
-                        <CloseIcon />
-                    </IconButton>
-                </div>
-            )}
+            {menuOpen && <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+                <Tab to="/" onClick={() => navigate("/")}>Portfolio</Tab>
+                <Tab to="/about" onClick={() => navigate("/about")}>About</Tab>
+                <ButtonIcon onClick={() => toggleDarkMode()}>{darkMode ? <SunnyIcon /> : <BedtimeIcon /> }</ButtonIcon>
+            </div>}
         </nav>
     )
 }
