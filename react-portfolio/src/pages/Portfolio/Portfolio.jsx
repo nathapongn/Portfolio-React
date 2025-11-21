@@ -16,10 +16,10 @@ export default function Portfolio() {
                         </div>
                     </div>
                     <div className="projects">
-                        <Card description="Streamlining personal finance management." darkMode={true}>Nimbus</Card>
-                        <Card description="Making investing less intimidating by design." darkMode={true}>Flint</Card>
-                        <Card description="Unifying public EV chargers." darkMode={true}>Amper</Card>
-                        <Card description="UX Design Internship " darkMode={false}>LINE MAN Wongnai</Card>
+                        <Card description="Streamlining personal finance management." modeSupport={true}>Nimbus</Card>
+                        <Card description="Making investing less intimidating by design." modeSupport={true}>Flint</Card>
+                        <Card description="Unifying public EV chargers." modeSupport={true}>Amper</Card>
+                        <Card description="UX Design Internship " modeSupport={false}>LINE MAN Wongnai</Card>
                     </div>
                 </div>
             </Wrapper>
