@@ -6,7 +6,9 @@
     position: fixed;
     z-index: 20;
     width: 100%;
-    background-color: var(--surface-0);
+    background-color: var(--surface-translucent);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 .navigation-content{
     display: flex;

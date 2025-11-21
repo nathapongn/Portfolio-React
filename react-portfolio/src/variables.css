@@ -97,7 +97,7 @@
     --surface-static-1: var(--darkneutral-100);
     --surface-static-outline-0: var(--darkneutral-350);
 
-    --surface-foreground-blur: rgba(255, 255, 255, 0.8);
+    --surface-translucent: rgba(255, 255, 255, 0.8);
 
     --text-neutral-primary: var(--darkneutral-0);
     --text-neutral-secondary: var(--darkneutral-300);
@@ -130,7 +130,7 @@
     --surface-static-1: var(--darkneutral-100);
     --surface-static-outline-0: var(--darkneutral-350);
 
-    --surface-foreground-blur: rgba(22, 26, 29, 0.8);
+    --surface-translucent: rgba(22, 26, 29, 0.8);
 
     --text-neutral-primary: var(--darkneutral-1100);
     --text-neutral-secondary: var(--darkneutral-900);
