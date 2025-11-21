@@ -18,7 +18,13 @@ export default function Footer() {
                         <h1 className="text-l text-neutral-primary">Liking what you're seeing?</h1>
                         <p className="text-m text-neutral-secondary">Let's work together!</p>
                     </div>
-                    <img className="icon-subtle" src={LinkedInIcon} alt="Go to my Linkedin" />
+                    <a 
+                        href="https://www.linkedin.com/in/nathapongn/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        <LinkedInIcon className="icon-subtle" />
+                    </a>
                 </div>
                 <Divider />
                 <p className="text-s text-neutral-placeholder">Designed in Figma, made with ReactJS.</p>
