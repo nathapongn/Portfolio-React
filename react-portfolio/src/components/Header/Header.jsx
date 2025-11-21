@@ -1,11 +1,13 @@
 // CSS
 import './Header.css'
 
+// Components
 import Wrapper from '../Wrapper/Wrapper.jsx'
 import Divider from '../Divider/Divider.jsx'
 import Tab from '../Tab/Tab.jsx'
 import ButtonIcon from '../ButtonIcon/ButtonIcon.jsx'
 
+// React
 import { useNavigate, Link} from 'react-router-dom'; 
 import { useState, useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext.jsx';
@@ -15,6 +17,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
 import SunnyIcon from '@mui/icons-material/Sunny';
+
+// Assets
+import siteLogo from '../../assets/index.js'
 
 export default function Header() {
     const navigate = useNavigate();
@@ -31,6 +36,7 @@ export default function Header() {
             <Wrapper id="header">
                 <div className="navigation-content">
                     <div className="site-name">
+                        <img className="site-logo" src={!darkMode ? siteLogo.light : siteLogo.dark} alt="Site Logo" />
                         <Link to="/" className="text-l link-plain">Nathapong Nurae</Link>
                     </div>
                     {/* Desktop Menu List */}
