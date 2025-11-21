@@ -28,26 +28,26 @@ export default function Portfolio() {
                         description="Sophisticated personal finance management." 
                         modeSupport={true} 
                         thumbnailType="video" 
-                        thumbnailSrc={}>Nimbus
+                        thumbnailSrc={''}>Nimbus
                         </Card>
 
                         <Card 
                         description="Making investing less intimidating by design." 
                         modeSupport={true} 
                         thumbnailType="video" 
-                        thumbnailSrc={}>Flint
+                        thumbnailSrc={''}>Flint
                         </Card>
 
                         <Card 
                         description="Unifying public EV chargers." 
                         modeSupport={true} 
                         thumbnailType="image" 
-                        thumbnailSrc={}>Amper
+                        thumbnailSrc={''}>Amper
                         </Card>
                         <Card 
                         description="UX Design Internship " 
                         thumbnailType="image"
-                        thumbnailSrc={}>
+                        thumbnailSrc={''}>
                         LINE MAN Wongnai
                         </Card>
                     </div>

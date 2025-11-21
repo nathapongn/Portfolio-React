@@ -10,9 +10,9 @@
     --spacing-xxxl: 64px;
     --spacing-xxxxl: 120px;
 
-    --icon-sm: 24px;
-    --icon-md: 32px;
-    --icon-lg: 40px;
+    --icon-s: 24px;
+    --icon-m: 32px;
+    --icon-l: 40px;
     --icon-xl: 64px;
     --icon-xxl: 80px;
 
@@ -100,8 +100,8 @@
     --surface-foreground-blur: rgba(255, 255, 255, 0.8);
 
     --text-neutral-primary: var(--darkneutral-0);
-    --text-neutral-secondary: var(--darkneutral-400);
-    --text-neutral-placeholder: var(--darkneutral-700);
+    --text-neutral-secondary: var(--darkneutral-300);
+    --text-neutral-placeholder: var(--darkneutral-500);
     --text-static-primary: var(--darkneutral-1100);
     --text-static-secondary: var(--darkneutral-1000);
     --text-static-placeholder: var(--darkneutral-800);
@@ -113,6 +113,7 @@
     --icon-enabled-hover: var(--darkneutral-500);
     --icon-subtle: var(--darkneutral-700);
     --icon-accent: var(--accent);
+    --icon-white: var(--neutral-0);
     
     --divider: var(--darkneutral-alpha-200);
 }
@@ -143,8 +144,8 @@
 
     --icon-enabled: var(--darkneutral-600);
     --icon-enabled-hover: var(--darkneutral-700);
-
     --icon-subtle: var(--darkneutral-500);
+    --icon-white: var(--neutral-0);
     
     --darkneutral-alpha-100: rgba(255, 255, 255, 0.05);
     --darkneutral-alpha-200: rgba(255, 255, 255, 0.09);
@@ -157,11 +158,12 @@
 .text-xxs { font-size: 0.833rem; font-weight: 400; line-height: 1.4; } /* ~10pt */
 .text-xs  { font-size: 1rem;    font-weight: 400; line-height: 1.4; } /* ~12pt */
 .text-s   { font-size: 1.125rem;font-weight: 400; line-height: 1.4; } /* ~14pt */
-.text-m   { font-size: 1.25rem; font-weight: 500; line-height: 1.5; } /* ~16pt */
+.text-m   { font-size: 1.25rem; font-weight: 400; line-height: 1.65; } /* ~16pt */
 .text-l   { font-size: 1.5rem;  font-weight: 500; line-height: 1.3; } /* ~18pt */
 .text-xl  { font-size: 2rem;    font-weight: 600; line-height: 1.2; } /* ~24pt */
 .text-xxl { font-size: 2.5rem;  font-weight: 600; line-height: 1.2; } /* ~32pt */
 .text-xxxl{ font-size: 3rem;    font-weight: 700; line-height: 1.1; } /* ~48pt */
+
 
 .link-plain {
     text-decoration: none;
@@ -184,3 +186,4 @@
 .icon-enabled-hover:hover { color: var(--icon-enabled-hover); cursor: pointer; }
 .icon-subtle { color: var(--icon-subtle); }
 .icon-accent { color: var(--icon-accent); }
+.icon-white { color: var(--icon-white); }
